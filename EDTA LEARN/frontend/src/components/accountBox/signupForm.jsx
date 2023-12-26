@@ -53,7 +53,7 @@ export function SignupForm(props) {
     } else {
       setLoading(true);
       const emailExist = await fetch(
-        `https://edtalearn.onrender.com/edtasimulator/searchUser/${emailRegisterInput}`,
+        `https://edtalearnbackend.onrender.com/edtasimulator/searchUser/${emailRegisterInput}`,
         {
           method: "GET",
           headers: {
@@ -69,7 +69,7 @@ export function SignupForm(props) {
           email: emailRegisterInput,
           password: passwordRegisterInput,
         };
-        fetch("https://edtalearn.onrender.com/edtasimulator/createUser", {
+        fetch("https://edtalearnbackend.onrender.com/edtasimulator/createUser", {
           method: "post",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),

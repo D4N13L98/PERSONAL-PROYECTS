@@ -35,7 +35,7 @@ export function LoginForm(props) {
     } else {
       setLoading(true)
       const emailExist = await fetch(
-        `https://edtalearn.onrender.com/edtasimulator/searchUser/${emailLoginInput}`,
+        `https://edtalearnbackend.onrender.com/edtasimulator/searchUser/${emailLoginInput}`,
         {
           method: "GET",
           headers: {
