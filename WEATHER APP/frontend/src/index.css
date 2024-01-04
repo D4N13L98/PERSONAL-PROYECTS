@@ -1,0 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+* {
+  font-family: 'Mona-Sans', sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 0.2em;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
+  scrollbar-width: thin;
+  scrollbar-color: white white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
