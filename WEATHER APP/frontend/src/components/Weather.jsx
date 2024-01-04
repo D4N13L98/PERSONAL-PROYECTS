@@ -368,6 +368,7 @@ const PagesBox = styled.div`
 
 const Weather = () => {
   const [filteredCities, setFilteredCities] = useState([]);
+  // eslint-disable-next-line
   const [fullInformationWeather, setFullInformationWeather] = useState([]);
   const [citiesAndCountries, setCitiesAndCounties] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
